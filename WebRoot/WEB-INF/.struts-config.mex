@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowViewLayout Version="1.2">
+  <StrutsActivity path="/test.do" location="255,15" dimension="150,100" />
+  <StrutsActivity path="/register.do" location="270,240" dimension="151,61" />
+  <StrutsActivity path="/profile.do" location="540,330" dimension="150,100" />
+  <StrutsActivity path="/login.do" location="540,135" dimension="151,61" />
+  <StrutsActivity path="/album.do" location="270,420" dimension="181,61" />
+  <StrutsActivity path="/WEB-INF/test/showCountry.jsp" location="465,15" dimension="150,100" />
+  <StrutsActivity path="/WEB-INF/test/test.jsp" location="45,15" dimension="150,100" />
+  <StrutsActivity path="/WEB-INF/public/register.jsp" location="30,225" dimension="151,76" />
+  <StrutsActivity path="/WEB-INF/self/home.jsp" location="525,225" dimension="181,76" />
+  <StrutsActivity path="/WEB-INF/public/index.jsp" location="270,135" dimension="181,61" />
+  <StrutsActivity path="/WEB-INF/self/uploadPhoto.jsp" location="540,465" dimension="181,100" />
+  <StrutsActivity path="/WEB-INF/self/homePage.jsp" location="270,330" dimension="166,76" />
+  <StrutsActivity path="/WEB-INF/self/addPhoto.jsp" location="15,525" dimension="151,76" />
+  <StrutsActivity path="/WEB-INF/self/addOrChoiceAlblum.jsp" location="15,405" dimension="151,91" />
+  <StrutsActivity path="/WEB-INF/self/myAlbum.jsp" location="375,570" dimension="166,76" />
+  <StrutsActivity path="/WEB-INF/self/oneAlbum.jsp" location="465,645" dimension="150,100" />
+  <StrutsActivity path="/WEB-INF/self/onePhoto.jsp" location="180,630" dimension="150,100" />
+  <StrutsTransition id="/WEB-INF/public/index.jsp,null,/register.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="360,196" />
+      <AbsolutePoint location="360,240" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/WEB-INF/test/test.jsp,null,/test.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="195,65" />
+      <AbsolutePoint location="255,65" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/profile.do,goHomePageUI,/WEB-INF/self/homePage.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="540,398" />
+      <AbsolutePoint location="436,398" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/WEB-INF/self/uploadPhoto.jsp,null,/profile.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="630,465" />
+      <AbsolutePoint location="630,430" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/album.do,goAddPhotoUI,/WEB-INF/self/addPhoto.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="338,481" />
+      <AbsolutePoint location="338,540" />
+      <AbsolutePoint location="166,540" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/profile.do,goUploadPhotoUI,/WEB-INF/self/uploadPhoto.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="660,430" />
+      <AbsolutePoint location="660,465" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/test.do,show,/WEB-INF/test/showCountry.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="405,65" />
+      <AbsolutePoint location="465,65" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/login.do,goHomeUI,/WEB-INF/self/home.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="615,196" />
+      <AbsolutePoint location="615,225" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/WEB-INF/public/index.jsp,null,/login.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="420,135" />
+      <AbsolutePoint location="420,-60" />
+      <AbsolutePoint location="630,-60" />
+      <AbsolutePoint location="630,135" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/login.do,goIndexUI,/WEB-INF/public/index.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="540,165" />
+      <AbsolutePoint location="451,165" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/album.do,goAddAlbumUI,/WEB-INF/self/addOrChoiceAlblum.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="270,450" />
+      <AbsolutePoint location="166,450" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/WEB-INF/self/myAlbum.jsp,null,/album.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="436,570" />
+      <AbsolutePoint location="436,481" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/album.do,goOneAlbumUI,/WEB-INF/self/oneAlbum.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="451,450" />
+      <AbsolutePoint location="796,450" />
+      <AbsolutePoint location="796,695" />
+      <AbsolutePoint location="615,695" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/album.do,goMyAlbumUI,/WEB-INF/self/myAlbum.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="390,481" />
+      <AbsolutePoint location="390,570" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/album.do,goOnePhotoUI,/WEB-INF/self/onePhoto.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="308,481" />
+      <AbsolutePoint location="308,630" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/register.do,regok,/WEB-INF/self/home.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="421,270" />
+      <AbsolutePoint location="525,270" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/register.do,regUI,/WEB-INF/public/register.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="270,293" />
+      <AbsolutePoint location="181,293" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/WEB-INF/self/homePage.jsp,null,/profile.do,0" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="436,368" />
+      <AbsolutePoint location="540,368" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/WEB-INF/public/register.jsp,null,/register.do,0" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="181,263" />
+      <AbsolutePoint location="270,263" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/WEB-INF/self/homePage.jsp,null,/album.do,0" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="353,406" />
+      <AbsolutePoint location="353,420" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/WEB-INF/self/home.jsp,null,/profile.do,0" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="615,301" />
+      <AbsolutePoint location="615,330" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+</FlowViewLayout>
+
